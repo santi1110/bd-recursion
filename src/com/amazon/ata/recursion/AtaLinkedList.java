@@ -102,8 +102,7 @@ public class AtaLinkedList {
      * @return The sum of all elements in the list
      */
     public Double sum() {
-        // PARTICIPANTS: Use your GILA answers to **recursively**
-        // calculate the sum of this AtaLinkedList
+        // PARTICIPANTS: calculate the sum of this AtaLinkedList
 
         throw new UnsupportedOperationException();
     }
@@ -114,8 +113,7 @@ public class AtaLinkedList {
      * @return a new reverse order list
      */
     public AtaLinkedList reverse() {
-        // PARTICIPANTS: Use your GILA answers to **recursively**
-        // create the reversed AtaLinkedList
+        // PARTICIPANTS: create the reversed AtaLinkedList
 
         throw new UnsupportedOperationException();
     }
