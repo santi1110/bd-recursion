@@ -102,9 +102,18 @@ public class AtaLinkedList {
      * @return The sum of all elements in the list
      */
     public Double sum() {
+            return sumRecursive(head);
         // PARTICIPANTS: calculate the sum of this AtaLinkedList
 
-        throw new UnsupportedOperationException();
+//        throw new UnsupportedOperationException();
+    }
+
+    private Double sumRecursive(AtaNode node){
+        if (node == null){
+            return 0.0;
+        }
+    return node.getData() + sumRecursive(node.getNext());
+
     }
 
     /**
@@ -113,10 +122,21 @@ public class AtaLinkedList {
      * @return a new reverse order list
      */
     public AtaLinkedList reverse() {
-        // PARTICIPANTS: create the reversed AtaLinkedList
 
-        throw new UnsupportedOperationException();
+        // PARTICIPANTS: create the reversed AtaLinkedList
+            return reverseRecursive(head);
+//        throw new UnsupportedOperationException();
     }
+
+    private AtaLinkedList reverseRecursive(AtaNode node){
+        if (node == null){
+            return new AtaLinkedList();
+        }
+        AtaLinkedList reversedList = reverseRecursive(node.getNext());
+        reversedList.addLast(node.getData());
+        return reversedList;
+    }
+
 
     // EXTENSION
     /**
